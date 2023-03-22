@@ -1,5 +1,8 @@
 from subprocess import Popen
 from sys import argv
+from os import system
+
+system("color 0a")
 
 def BDbuild():
     Popen("pyinstaller --onefile toolkit/Backdoor/backdoor.py")
