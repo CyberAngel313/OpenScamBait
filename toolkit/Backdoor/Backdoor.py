@@ -1,5 +1,7 @@
 import socket
+from os import system
 
+system("color 0a")
 
 HOST = '127.0.0.1' # '192.168.43.82'
 PORT = 8081 # 2222
