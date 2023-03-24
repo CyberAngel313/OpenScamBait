@@ -4,8 +4,6 @@ from os import system
 
 system("color 0a")
 
-def BDbuild():
-    Popen("pyinstaller --onefile --onedir Backdoor/backdoor.py")
-
 if argv[1] == "backdoor":
-    BDbuild()
+    if argv[2] == 1:
+        Popen("pyinstaller --onefile --onedir Backdoor/backdoor.py")
